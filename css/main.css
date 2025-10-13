@@ -1017,19 +1017,23 @@ footer {
 .profile-container {
     max-width: 900px;
     margin: 0 auto;
-    padding-bottom: 60px;
-    border-bottom: 2px solid #ff0000; /* Linha vermelha separando cada dev */
+    padding-bottom: 80px; /* Aumentado de 60px para 80px */
+    margin-bottom: 80px; /* Adicionado margin-bottom */
+    border-bottom: 2px solid #ff0000;
 }
 
 .profile-container:last-child {
-    border-bottom: none; /* Remove a linha do último dev */
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 60px;
 }
 
 .dev-name {
-    font-size: 32px; /* Tamanho reduzido */
+    font-size: 32px;
     color: #ff0000;
     text-align: center;
     margin-bottom: 10px;
+    margin-top: 0; /* Garantir que não há margem extra no topo */
     position: relative;
     padding-bottom: 15px;
 }
