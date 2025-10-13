@@ -7,6 +7,25 @@ window.addEventListener("scroll", function () {
     navbar.classList.remove("scrolled");
   }
 });
+
+// Active link highlighting
+document.addEventListener('DOMContentLoaded', function() {
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    const navLinks = document.querySelectorAll('.navbar nav ul li a');
+    
+    navLinks.forEach(link => {
+        const href = link.getAttribute('href');
+        
+        // Remove active class from all links first
+        link.classList.remove('active');
+        
+        // Add active class to current page link
+        if (href === currentPage) {
+            link.classList.add('active');
+        }
+    });
+});
+
 // FAQ Accordion
 document.addEventListener('DOMContentLoaded', function() {
     const questions = document.querySelectorAll('.question');

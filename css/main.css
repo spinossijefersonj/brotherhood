@@ -1012,13 +1012,18 @@ footer {
     background: #0d0f0a;
     min-height: 100vh;
     padding: 60px 5%;
+    padding-top: 0; /* Remove o padding-top para não interferir */
+}
+
+.profile-container:first-child {
+    margin-top: 60px; /* Adiciona espaço para a navbar */
 }
 
 .profile-container {
     max-width: 900px;
     margin: 0 auto;
-    padding-bottom: 80px; /* Aumentado de 60px para 80px */
-    margin-bottom: 80px; /* Adicionado margin-bottom */
+    padding-bottom: 80px;
+    margin-bottom: 80px;
     border-bottom: 2px solid #ff0000;
 }
 
